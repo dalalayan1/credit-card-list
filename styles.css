@@ -1,3 +1,8 @@
+.credit-card-form,
+.saved-cards {
+    width: 50%;
+    text-align: center;
+}
 .credit-card-form img {
     margin-bottom: -15px;
 }
@@ -9,10 +14,12 @@
 }
 .credit-card-form > div {
     position: relative;
+    width: 300px;
+    margin: 0 auto;
 }
 .credit-card-form input {
     border-radius: 50px;
-    width: 300px;
+    width: 100%;
     box-sizing: border-box;
     margin: 10px auto;
     padding: 10px;
