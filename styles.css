@@ -1,0 +1,61 @@
+.credit-card-form img {
+    margin-bottom: -15px;
+}
+.credit-card-form {
+    float: left;    
+}
+.saved-cards {
+    float: right;
+}
+.credit-card-form > div {
+    position: relative;
+}
+.credit-card-form input {
+    border-radius: 50px;
+    width: 300px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 1px 1px 18px rgba(0, 0, 0, .1);
+}
+.credit-card-form input[type="submit"] {
+    background: #85dca4;
+    width: auto;
+    padding: 10px 40px;
+}
+.credit-card-form span {
+    position: absolute;
+    right: 18px;
+    top: 20px;
+}
+.credit-card-form h2 {
+    display: inline-block;
+}
+.credit-card-form .error-field {
+    color: red;
+    display: none;
+}
+.saved-cards .card {
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 20px;
+    height: 200px;
+    width: 400px;
+    background: lightgray;
+    opacity: 0.5;
+}
+.saved-cards .card>div {
+    padding: 5px 0;
+}
+.saved-cards .card .card-type {
+    text-transform: uppercase;
+    text-align: center;
+}
+.saved-cards .card .card-number {
+    font-size: 25px;
+    font-weight: bold;
+}
+.saved-cards .card .cvv {
+    font-style: italic;
+}
