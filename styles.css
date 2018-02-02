@@ -29,6 +29,7 @@
     background: #85dca4;
     width: auto;
     padding: 10px 40px;
+    cursor: pointer;
 }
 .credit-card-form span {
     position: absolute;
