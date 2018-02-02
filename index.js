@@ -40,7 +40,9 @@
 
     function validateCardNumber(evt) {
         var inputStr = evt.target.value;
+        var inputStrLength = inputStr.length;
         var inputStrWithoutSpace = inputStr.split(' ').join('');
+        var inputStrWithoutSpaceLength = inputStrWithoutSpace.length;
         var inputVal = parseInt(inputStrWithoutSpace);
         for (var key in validationObj) {
             var regex = new RegExp(validationObj[key].cardPattern);
@@ -59,8 +61,11 @@
         }
 
         
-        if (inputStrWithoutSpace.length === 4 || inputStrWithoutSpace.length === 8 || inputStrWithoutSpace.length === 12 || inputStrWithoutSpace.length === 12) {
-            evt.target.setAttribute('maxLength', evt.target.getAttribute('maxLength')+1);
+        if (inputStrWithoutSpaceLength && inputStrWithoutSpaceLength % 4 === 0 && inputStr[inputStrLength - 1] !== ' ') {
+            debugger
+            if ( validationParams ) {
+                evt.target.setAttribute('maxLength', evt.target.getAttribute('maxLength')+1);
+            }
             evt.target.value = `${inputStr} `;
         }
     }
